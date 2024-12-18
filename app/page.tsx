@@ -4,7 +4,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <section className='bg-background'>
+    <section className='bg-black text-white'>
         <NavBar/>
         <LandingPage/>
     </section>

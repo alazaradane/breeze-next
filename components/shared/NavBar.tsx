@@ -12,22 +12,23 @@ const NavBar = () => {
     <section
     className="flex px-3 py-2  items-center gap-5 bg-white/20 backdrop-blur-lg border border-white/10 rounded-xl shadow-md"
     style={{
-        backgroundColor: "rgba(255, 255, 255, 0.1)", // Transparent white
-        backdropFilter: "blur(10px)", // Frosted glass effect
-        WebkitBackdropFilter: "blur(10px)", // For Safari compatibility
+        backgroundColor: "rgba(255, 255, 255, 0.1)", 
+        backdropFilter: "blur(10px)", 
+        WebkitBackdropFilter: "blur(10px)",
+        height: '5rem'
     }}
 >
     <div className="flex-grow">
         <Image
-            src={'assets/images/studmind.svg'}
+            src={'/assets/images/studimg-black.png'}
             alt="studmind logo"
             width={200}
-            height={180}
+            height={40}
         />
     </div>
     <div className="flex gap-3 items-center ml-6">
         <div className="mx-3">
-            <ul className="flex gap-7 text-gray-500 text-md flex-nowrap whitespace-nowrap">
+            <ul className="flex gap-7 text-gray-300 text-md flex-nowrap whitespace-nowrap">
                 {navLinks.map((link) => (
                     <Link href={link.href} key={link.title} className="">
                         <li className="">{link.title}</li>
